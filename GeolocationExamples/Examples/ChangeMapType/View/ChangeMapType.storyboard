@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Change Map Type-->
+        <scene sceneID="xVS-sB-CCM">
+            <objects>
+                <viewController storyboardIdentifier="ChangeMapTypeId" id="wHL-Uo-zTc" customClass="ChangeMapType" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dwt-jM-KtI"/>
+                        <viewControllerLayoutGuide type="bottom" id="ejA-dx-ZJG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MDr-zO-E76">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="H1x-DH-hgm">
+                                <rect key="frame" x="0.0" y="518" width="320" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="rmg-hb-5kI"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satelite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                                <connections>
+                                    <action selector="scChangeMapType:" destination="wHL-Uo-zTc" eventType="valueChanged" id="rKj-9k-ju9"/>
+                                </connections>
+                            </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Bl-OK-aBY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Bl-OK-aBY" firstAttribute="width" secondItem="MDr-zO-E76" secondAttribute="width" id="diK-sQ-T7c"/>
+                            <constraint firstItem="ejA-dx-ZJG" firstAttribute="top" secondItem="H1x-DH-hgm" secondAttribute="bottom" constant="15" id="fTr-0v-ZCW"/>
+                            <constraint firstItem="ejA-dx-ZJG" firstAttribute="top" secondItem="3Bl-OK-aBY" secondAttribute="bottom" constant="68" id="kpv-pe-Jmx"/>
+                            <constraint firstItem="H1x-DH-hgm" firstAttribute="width" secondItem="MDr-zO-E76" secondAttribute="width" id="rBp-7r-gux"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="3Bl-OK-aBY" id="Wwy-5G-KJv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q01-ps-ZfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="292"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

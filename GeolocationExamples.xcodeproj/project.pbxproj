@@ -12,6 +12,8 @@
 		144F00E81B9B5C4C00F7CC0D /* UserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 144F00E51B9B5C4C00F7CC0D /* UserLocation.m */; };
 		144F00E91B9B5C4C00F7CC0D /* UserLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144F00E71B9B5C4C00F7CC0D /* UserLocation.storyboard */; };
 		144F00EB1B9B5C7900F7CC0D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144F00EA1B9B5C7900F7CC0D /* MapKit.framework */; };
+		144F00EF1B9B668700F7CC0D /* ChangeMapType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144F00EE1B9B668700F7CC0D /* ChangeMapType.storyboard */; };
+		144F00F31B9B674F00F7CC0D /* ChangeMapType.m in Sources */ = {isa = PBXBuildFile; fileRef = 144F00F21B9B674F00F7CC0D /* ChangeMapType.m */; };
 		145C1B231B9A45A40019A6C8 /* MainListExamples.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145C1B221B9A45A40019A6C8 /* MainListExamples.storyboard */; };
 		145C95311B9A1FD10047783E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 145C95301B9A1FD10047783E /* main.m */; };
 		145C95341B9A1FD10047783E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 145C95331B9A1FD10047783E /* AppDelegate.m */; };
@@ -39,6 +41,9 @@
 		144F00E51B9B5C4C00F7CC0D /* UserLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocation.m; sourceTree = "<group>"; };
 		144F00E71B9B5C4C00F7CC0D /* UserLocation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserLocation.storyboard; sourceTree = "<group>"; };
 		144F00EA1B9B5C7900F7CC0D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		144F00EE1B9B668700F7CC0D /* ChangeMapType.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ChangeMapType.storyboard; path = Examples/ChangeMapType/View/ChangeMapType.storyboard; sourceTree = "<group>"; };
+		144F00F11B9B674F00F7CC0D /* ChangeMapType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChangeMapType.h; path = Examples/ChangeMapType/Controller/ChangeMapType.h; sourceTree = "<group>"; };
+		144F00F21B9B674F00F7CC0D /* ChangeMapType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChangeMapType.m; path = Examples/ChangeMapType/Controller/ChangeMapType.m; sourceTree = "<group>"; };
 		145C1B221B9A45A40019A6C8 /* MainListExamples.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainListExamples.storyboard; path = Main/View/MainListExamples.storyboard; sourceTree = "<group>"; };
 		145C952B1B9A1FD10047783E /* GeolocationExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeolocationExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		145C952F1B9A1FD10047783E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +89,7 @@
 		1443BEAC1B9A36A80022CDD9 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				144F00EC1B9B65FC00F7CC0D /* ChangeMapType */,
 				144F00E21B9B5C4C00F7CC0D /* UserLocation */,
 			);
 			name = Examples;
@@ -140,6 +146,32 @@
 				144F00E71B9B5C4C00F7CC0D /* UserLocation.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		144F00EC1B9B65FC00F7CC0D /* ChangeMapType */ = {
+			isa = PBXGroup;
+			children = (
+				144F00F01B9B66F800F7CC0D /* Controller */,
+				144F00ED1B9B662500F7CC0D /* View */,
+			);
+			name = ChangeMapType;
+			sourceTree = "<group>";
+		};
+		144F00ED1B9B662500F7CC0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				144F00EE1B9B668700F7CC0D /* ChangeMapType.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		144F00F01B9B66F800F7CC0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				144F00F11B9B674F00F7CC0D /* ChangeMapType.h */,
+				144F00F21B9B674F00F7CC0D /* ChangeMapType.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		145C95221B9A1FD10047783E = {
@@ -284,6 +316,7 @@
 				145C953F1B9A1FD10047783E /* LaunchScreen.xib in Resources */,
 				145C1B231B9A45A40019A6C8 /* MainListExamples.storyboard in Resources */,
 				144F00E91B9B5C4C00F7CC0D /* UserLocation.storyboard in Resources */,
+				144F00EF1B9B668700F7CC0D /* ChangeMapType.storyboard in Resources */,
 				145C953C1B9A1FD10047783E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144F00F31B9B674F00F7CC0D /* ChangeMapType.m in Sources */,
 				1443BEAF1B9A37270022CDD9 /* MainListExamples.m in Sources */,
 				1443BEC51B9A3D9F0022CDD9 /* ExampleCell.m in Sources */,
 				144F00E81B9B5C4C00F7CC0D /* UserLocation.m in Sources */,

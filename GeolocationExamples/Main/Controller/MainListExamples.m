@@ -8,6 +8,7 @@
 
 #import "MainListExamples.h"
 #import "UserLocation.h"
+#import "ChangeMapType.h"
 #import "ExampleCell.h"
 
 @interface MainListExamples ()
@@ -52,6 +53,10 @@
             [self.navigationController pushViewController:[UserLocation newUserLocationInstance] animated:YES];
             break;
             
+        case 1:
+            [self.navigationController pushViewController:[ChangeMapType newChangeMapTypeInstance] animated:YES];
+            break;
+            
         default:
             break;
     }
@@ -60,7 +65,7 @@
 #pragma mark - Utility
 
 - (void)createAllExamples {
-    allExamples = @[@"User location", @"opcao2", @"opcao3", @"opcao4", @"opcao5", @"opcao6"];
+    allExamples = @[@"User location", @"Change map type", @"opcao3", @"opcao4", @"opcao5", @"opcao6"];
 }
 
 @end
