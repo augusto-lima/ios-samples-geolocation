@@ -62,6 +62,8 @@
 
 - (void)mapView:(MKMapView *)mapView didFailToLocateUserWithError:(NSError *)error {
     NSLog(@"Erro: %@",error);
+//    em caso de erro, olhe nas funções do simulador e escolhe "debug > location" e escolhe uma localização
+//    pode dar erro tambem no caso de estar sem coneção com internet
 }
 
 
